@@ -11,11 +11,12 @@ namespace BloodDonationApp
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                 "~/Scripts/angular.js",
-                      "~/Scripts/angular-*",
-                      "~/Scripts/errors.json"));
+                "~/Scripts/angular-*"));
+
+
 
             bundles.Add(new ScriptBundle("~/bundles/angular-ui").Include(
-                       "~/Scripts/ui-bootstrap-tpls.js",                       
+                       "~/Scripts/ui-bootstrap-tpls.js",
                          "~/Scripts/ui-bootstrap.js"
                          ));
 
