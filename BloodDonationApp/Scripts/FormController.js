@@ -1,4 +1,4 @@
-﻿angular.module('myApp', []).controller('FormController', function ($scope) {
+﻿angular.module('BloodDonationApp', []).controller('FormController', function ($scope) {
     $scope.edit = true;
     $scope.error = false;
     $scope.incomplete = false;
