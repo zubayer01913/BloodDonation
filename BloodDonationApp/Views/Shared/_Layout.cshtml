@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app>
+<html ng-app="BloodDonationApp">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +27,10 @@
             </div>
         </div>
     </div>
+
+
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -40,6 +44,8 @@
     @Scripts.Render("~/bundles/angular")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/angular-ui")   
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.3.js"></script>
+    <script src="~/Scripts/AddContoller.js"></script>
     @RenderSection("scripts", required: false)
 
 </body>

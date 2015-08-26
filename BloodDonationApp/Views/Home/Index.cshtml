@@ -1,14 +1,28 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+
+
+
+<div ng-controller="SlideCtrl">
+    <div style="height: 305px">
+        <carousel interval="myInterval" no-wrap="noWrapSlides">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <div style="width: 600px; height: 300px; margin: 0 auto;">
+                    <img class="img-responsive" ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption">
+                        <h4 style="color: green;">{{slide.text}}</h4>
+                        @*<p>{{slide.text}}</p>*@
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>
 
 
 
 
-    <input type="text" ng-model="helloAngular" />
-    <h1>{{helloAngular}}</h1>
 
     
 
