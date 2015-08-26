@@ -1,5 +1,5 @@
-﻿angular.module('BloodDonationApp', ['ngAnimate', 'ui.bootstrap']);
-angular.module('BloodDonationApp').controller('SlideCtrl', function ($scope) {
+﻿var app=angular.module('BloodDonationApp', ['ngAnimate', 'ui.bootstrap']);
+app.controller('SlideCtrl', function ($scope) {
     $scope.myInterval = 5000;
     $scope.noWrapSlides = false;
     $scope.slides = [
