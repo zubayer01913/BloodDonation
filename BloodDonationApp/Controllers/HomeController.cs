@@ -13,8 +13,10 @@ namespace BloodDonationApp.Controllers
             return View();
         }
 
-        public ActionResult SignUp()
+        public ActionResult About()
         {
+            ViewBag.Message = "Your application description page.";
+
             return View();
         }
 
