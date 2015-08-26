@@ -1,93 +1,29 @@
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\BloodDonationApp.dll.config
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\BloodDonationApp.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\BloodDonationApp.pdb
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\Antlr3.Runtime.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\EntityFramework.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\EntityFramework.SqlServer.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\Newtonsoft.Json.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.Helpers.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.Mvc.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.Optimization.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.Razor.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.WebPages.Deployment.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.WebPages.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.WebPages.Razor.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\WebGrease.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\EntityFramework.xml
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\EntityFramework.SqlServer.xml
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.Helpers.xml
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.Mvc.xml
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.Optimization.xml
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.Razor.xml
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.WebPages.xml
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.WebPages.Deployment.xml
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\System.Web.WebPages.Razor.xml
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\Newtonsoft.Json.xml
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\bin\Antlr3.Runtime.pdb
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\obj\Debug\BloodDonationApp.csprojResolveAssemblyReference.cache
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\obj\Debug\BloodDonationApp.dll
-C:\Users\bs062\Documents\Visual Studio 2013\Projects\BloodDonationApp\BloodDonationApp\obj\Debug\BloodDonationApp.pdb
-<<<<<<< HEAD
-E:\BloodDonation\BloodDonationApp\bin\BloodDonationApp.dll.config
-E:\BloodDonation\BloodDonationApp\bin\BloodDonationApp.dll
-E:\BloodDonation\BloodDonationApp\bin\BloodDonationApp.pdb
-E:\BloodDonation\BloodDonationApp\bin\Antlr3.Runtime.dll
-E:\BloodDonation\BloodDonationApp\bin\EntityFramework.dll
-E:\BloodDonation\BloodDonationApp\bin\EntityFramework.SqlServer.dll
-E:\BloodDonation\BloodDonationApp\bin\Microsoft.Web.Infrastructure.dll
-E:\BloodDonation\BloodDonationApp\bin\Newtonsoft.Json.dll
-E:\BloodDonation\BloodDonationApp\bin\System.Web.Helpers.dll
-E:\BloodDonation\BloodDonationApp\bin\System.Web.Mvc.dll
-E:\BloodDonation\BloodDonationApp\bin\System.Web.Optimization.dll
-E:\BloodDonation\BloodDonationApp\bin\System.Web.Razor.dll
-E:\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Deployment.dll
-E:\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.dll
-E:\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Razor.dll
-E:\BloodDonation\BloodDonationApp\bin\WebGrease.dll
-E:\BloodDonation\BloodDonationApp\bin\EntityFramework.xml
-E:\BloodDonation\BloodDonationApp\bin\EntityFramework.SqlServer.xml
-E:\BloodDonation\BloodDonationApp\bin\System.Web.Helpers.xml
-E:\BloodDonation\BloodDonationApp\bin\System.Web.Mvc.xml
-E:\BloodDonation\BloodDonationApp\bin\System.Web.Optimization.xml
-E:\BloodDonation\BloodDonationApp\bin\System.Web.Razor.xml
-E:\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.xml
-E:\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Deployment.xml
-E:\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Razor.xml
-E:\BloodDonation\BloodDonationApp\bin\Newtonsoft.Json.xml
-E:\BloodDonation\BloodDonationApp\bin\Antlr3.Runtime.pdb
-E:\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.csprojResolveAssemblyReference.cache
-E:\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.dll
-E:\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.pdb
-=======
-D:\testpreview\BloodDonation\BloodDonationApp\bin\BloodDonationApp.dll.config
-D:\testpreview\BloodDonation\BloodDonationApp\bin\BloodDonationApp.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\BloodDonationApp.pdb
-D:\testpreview\BloodDonation\BloodDonationApp\bin\Antlr3.Runtime.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\EntityFramework.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\EntityFramework.SqlServer.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\Microsoft.Web.Infrastructure.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\Newtonsoft.Json.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.Helpers.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.Mvc.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.Optimization.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.Razor.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Deployment.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Razor.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\WebGrease.dll
-D:\testpreview\BloodDonation\BloodDonationApp\bin\EntityFramework.xml
-D:\testpreview\BloodDonation\BloodDonationApp\bin\EntityFramework.SqlServer.xml
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.Helpers.xml
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.Mvc.xml
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.Optimization.xml
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.Razor.xml
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.xml
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Deployment.xml
-D:\testpreview\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Razor.xml
-D:\testpreview\BloodDonation\BloodDonationApp\bin\Newtonsoft.Json.xml
-D:\testpreview\BloodDonation\BloodDonationApp\bin\Antlr3.Runtime.pdb
-D:\testpreview\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.csprojResolveAssemblyReference.cache
-D:\testpreview\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.dll
-D:\testpreview\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.pdb
->>>>>>> a1293bfbd9b50d0673b39ad3bcd884c872052873
+D:\training\project\BloodDonation\BloodDonationApp\bin\BloodDonationApp.dll.config
+D:\training\project\BloodDonation\BloodDonationApp\bin\BloodDonationApp.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\BloodDonationApp.pdb
+D:\training\project\BloodDonation\BloodDonationApp\bin\Antlr3.Runtime.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\EntityFramework.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\EntityFramework.SqlServer.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\Microsoft.Web.Infrastructure.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\Newtonsoft.Json.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.Helpers.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.Mvc.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.Optimization.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.Razor.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Deployment.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Razor.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\WebGrease.dll
+D:\training\project\BloodDonation\BloodDonationApp\bin\EntityFramework.xml
+D:\training\project\BloodDonation\BloodDonationApp\bin\EntityFramework.SqlServer.xml
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.Helpers.xml
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.Mvc.xml
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.Optimization.xml
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.Razor.xml
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.xml
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Deployment.xml
+D:\training\project\BloodDonation\BloodDonationApp\bin\System.Web.WebPages.Razor.xml
+D:\training\project\BloodDonation\BloodDonationApp\bin\Newtonsoft.Json.xml
+D:\training\project\BloodDonation\BloodDonationApp\bin\Antlr3.Runtime.pdb
+D:\training\project\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.dll
+D:\training\project\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.pdb
