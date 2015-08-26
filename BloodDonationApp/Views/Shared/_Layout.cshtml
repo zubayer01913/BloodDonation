@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app>
+<html ng-app="myApp">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("SignUp", "SignUp", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
             </div>
@@ -34,12 +34,13 @@
             <p>&copy; @DateTime.Now.Year - My Angular Js Application</p>
         </footer>
     </div>
-   
 
-    @*<script src="~/Scripts/angular.min.js"></script>*@
+    
+ 
     @Scripts.Render("~/bundles/angular")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/angular-ui")   
+    @Scripts.Render("~/bundles/angular-ui")
+    <script src="~/Scripts/FormController.js"></script>
     @RenderSection("scripts", required: false)
 
 </body>
