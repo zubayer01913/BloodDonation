@@ -55,6 +55,22 @@ app.filter('ageFilter', function () {
 });
 
 
+app.filter('dayFilter', function () {
+    function dayAge(birthday) { // birthday is a date
+        var ageDifMs = Date.now() - birthday.getTime();
+        var ageDate = new Date(ageDifMs); // miliseconds from epoch
+        var year = Math.abs(ageDate.getUTCFullYear() - 1970);
+        var month = ageDate.getUTCMonth();
+        var day = ageDate.getUTCDate();
+        return year + " year "+month+" month "+day+" day ";
+    }
+
+    return function (birthdate) {
+        return dayAge(birthdate);
+    };
+});
+
+
 app.filter("jsDate", function () {
     return function (x) {
         return new Date(parseInt(x.substr(6)));
