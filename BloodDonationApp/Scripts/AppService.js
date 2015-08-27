@@ -1,8 +1,8 @@
 ﻿app.service("angularService", function ($http) {
 
-    //get All Eployee
-    this.getEmployees = function () {
-        return $http.get("Home/GetAll");
+    //get All DonarList
+    this.getDonarList = function () {
+        return $http.get("Home/GetDonarList");
     };
 
     // get Employee By Id

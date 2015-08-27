@@ -26,11 +26,19 @@ app.controller('SlideCtrl', function ($scope) {
     ];
 });
 
-app.controller('userCtrl', function ($scope) {
-    $scope.DonatorList = [{ Id: "1", Name: "Alfreds Futterkiste", Age: "23", Phone: "46576235978", Email: "example@emaple.com", Address: "mirpur", LastDonate: "" },
-     { Id: "2", Name: "Ana Trujillo Emparedados y helados", Age: "23", Phone: "46576235978", Email: "example@emaple.com", Address: "mirpur", LastDonate: "" },
-    ];
-    $scope.birthday = new Date(1970, 1, 1);
+app.controller('userCtrl', function ($scope, angularService) {
+    //$scope.DonatorList = [{ Id: "1", Name: "Alfreds Futterkiste", Age: "23", Phone: "46576235978", Email: "example@emaple.com", Address: "mirpur", LastDonate: "" },
+    // { Id: "2", Name: "Ana Trujillo Emparedados y helados", Age: "23", Phone: "46576235978", Email: "example@emaple.com", Address: "mirpur", LastDonate: "" },
+    //];
+   
+    var getData = angularService.getDonarList();
+    getData.then(function (obj) {
+        $scope.DonatorList = obj.data;
+    }, function () {
+        alert('Error in getting records');
+    });
+
+        $scope.birthday = new Date(1970, 1, 1);
 });
 
 
