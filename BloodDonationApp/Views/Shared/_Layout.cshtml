@@ -22,7 +22,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("SignUp", "SignUp", "Home")</li>
+                    <li>@Html.ActionLink("Register", "Create", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
             </div>
@@ -46,7 +46,8 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/angular-ui")   
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.3.js"></script>
-
+    <script src="~/Scripts/AppModuleInitialization.js"></script>
+    <script src="~/Scripts/AppService.js"></script>
     <script src="~/Scripts/AddContoller.js"></script>
     <script src="~/Scripts/FormController.js"></script>
     @RenderSection("scripts", required: false)
