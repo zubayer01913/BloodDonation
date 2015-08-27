@@ -1,4 +1,4 @@
-﻿app.controller('FormController',function ($scope, angularService) {
+﻿app.controller('FormController', function ($scope, $window, angularService) {
         
         $scope.Name = '';
         $scope.Email = '';
@@ -59,6 +59,7 @@
                 else {
                     angularService.AddDonar(Model);
                     alert("Registration successfull")
+                    $window.location.href = 'Index';
                 }
             }, function () {
                 alert('Error in Email verification process');
