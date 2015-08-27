@@ -38,7 +38,11 @@ app.controller('userCtrl', function ($scope, angularService) {
         alert('Error in getting records');
     });
 
-       
+    $scope.BloodGroups = [{ name: "A+", id: 1 }, { name: "A-", id: 2 }
+                         , { name: "B+", id: 3 }, { name: "B-", id: 4 },
+                           { name: "AB+", id: 5 }, { name: "AB-", id: 6 },
+       { name: "O+", id: 7 }, { name: "O-", id: 8 }];
+    $scope.BloodGroup = "";
 });
 
 
@@ -57,11 +61,13 @@ app.filter('ageFilter', function () {
 
 app.filter('dayFilter', function () {
     function dayAge(birthday) { // birthday is a date
+        if (birthday == null)
+            return "Not Donated Yet";
         var ageDifMs = Date.now() - birthday.getTime();
         var ageDate = new Date(ageDifMs); // miliseconds from epoch
         var year = Math.abs(ageDate.getUTCFullYear() - 1970);
         var month = ageDate.getUTCMonth();
-        var day = ageDate.getUTCDate();
+        var day = ageDate.getUTCDate()-1;
         return year + " year "+month+" month "+day+" day ";
     }
 
@@ -73,6 +79,8 @@ app.filter('dayFilter', function () {
 
 app.filter("jsDate", function () {
     return function (x) {
+        if (x == null)
+            return x;
         return new Date(parseInt(x.substr(6)));
     };
 });
