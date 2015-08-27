@@ -37,7 +37,7 @@ namespace BloodDonationApp.Models
 
         [DataType(DataType.Date)]
         [Display(Name = "Last Donation Date : ")]
-        public DateTime LastDateOfDonation { get; set; }
+        public DateTime? LastDateOfDonation { get; set; }
 
 
         [Required]

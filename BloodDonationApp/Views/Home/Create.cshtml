@@ -18,7 +18,7 @@
     <div class="form-group">
         <label class="col-sm-2 control-label">Full Name:</label>
         <div class="col-sm-10">
-            <input type="text" ng-model="Name" placeholder="Enter Name">
+            <input type="text" name="Name" ng-model="Name" placeholder="Enter Name" required>
             <span style="color:red" ng-show="myForm.Name.$dirty && myForm.Name.$invalid">
                 <span ng-show="myForm.Name.$error.required">Name is required.</span>
             </span>
@@ -36,14 +36,14 @@
     <div class="form-group">
         <label class="col-sm-2 control-label">Date of Birth :</label>
         <div class="col-sm-10">
-            <input type="date" ng-model="DateOfBirth">
+            <input type="date" ng-model="DateOfBirth" required>
         </div>
     </div>
 
     <div class="form-group">
         <label class="col-sm-2 control-label">Phone :</label>
         <div class="col-sm-10">
-            <input type="text" ng-model="Phone" placeholder="Enter Phone Number ">
+            <input type="text" name="Phone" ng-model="Phone" placeholder="Enter Phone Number " required>
             <span style="color:red" ng-show="myForm.Phone.$dirty && myForm.Phone.$invalid">
                 <span ng-show="myForm.Phone.$error.required">Phone Number is required.</span>
             </span>
@@ -53,7 +53,7 @@
     <div class="form-group">
         <label class="col-sm-2 control-label">Email :</label>
         <div class="col-sm-10">
-            <input type="email" ng-model="Email" ng-disabled="!edit" placeholder="Enter Email ">
+            <input type="email" ng-model="Email" name="Email" placeholder="Enter Email " required>
             <span style="color:red" ng-show="myForm.Email.$dirty && myForm.Email.$invalid">
                 <span ng-show="myForm.Email.$error.required">Email is required.</span>
                 <span ng-show="myForm.Email.$error.email">Invalid email address.</span>
@@ -71,8 +71,10 @@
     <div class="form-group">
         <label class="col-sm-2 control-label">Present Address :</label>
         <div class="col-sm-10">
-            <textarea ng-model="Address" name="Address" ng-maxlength="100"></textarea>
-        </div>
+            <textarea ng-model="Address" name="Address" ng-maxlength="100" required></textarea>
+            <span style="color:red" ng-show="myForm.Address.$dirty && myForm.Address.$invalid">
+                <span ng-show="myForm.Address.$error.required">Address is required.</span>
+</div>
     </div>
 
     
@@ -80,19 +82,50 @@
     <div class="form-group">
         <label class="col-sm-2 control-label">Password:</label>
         <div class="col-sm-10">
-            <input type="password" ng-model="password1" placeholder="Password">
+            <input type="password" ng-model="password1" placeholder="Password" required>
         </div>
     </div>
     <div class="form-group">
         <label class="col-sm-2 control-label">Confirm Password:</label>
         <div class="col-sm-10">
-            <input type="password" ng-model="password2" placeholder="Repeat Password">
+            <input type="password" ng-model="password2" placeholder="Repeat Password" required>
         </div>
     </div>
-    <button type="submit" class="btn btn-success" ng-disabled="false">
-        <span class="glyphicon glyphicon-save"></span>  Save Changes
-    </button>
-    @*<input type="submit" value="Save" />*@
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label"></label>
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-success" ng-disabled="myForm.$invalid || myForm.$pending">
+                <span class="glyphicon glyphicon-save"></span>  Make Profile
+            </button>
+        </div>
+        </div>
+            @*<input type="submit" value="Save" />*@
+
+            @*<p>
+                    Username:<br>
+                    <input type="text" name="user" ng-model="user" required>
+                    <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+                        <span ng-show="myForm.user.$error.required">Username is required.</span>
+                    </span>
+                </p>
+
+                <p>
+                    Email:<br>
+                    <input type="email" name="email" ng-model="email" required>
+                    <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                        <span ng-show="myForm.email.$error.required">Email is required.</span>
+                        <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                    </span>
+                </p>
+
+
+                <p>
+                    <input type="submit"
+                           ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||
+            myForm.email.$dirty && myForm.email.$invalid">
+                </p>*@
+
 </form>
 
 
