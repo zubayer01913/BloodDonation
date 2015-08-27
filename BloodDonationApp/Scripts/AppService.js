@@ -50,4 +50,15 @@
         });
         return response;
     }
+
+    this.IsEmailAlreadyExist = function (email) {
+        var response = $http({
+            method: "post",
+            url: "IsEmailAlreadyExist",
+            params: {
+                email: email
+            }
+        });
+        return response;
+    }
 });

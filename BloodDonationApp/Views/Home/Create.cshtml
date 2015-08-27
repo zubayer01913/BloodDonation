@@ -57,6 +57,7 @@
             <span style="color:red" ng-show="myForm.Email.$dirty && myForm.Email.$invalid">
                 <span ng-show="myForm.Email.$error.required">Email is required.</span>
                 <span ng-show="myForm.Email.$error.email">Invalid email address.</span>
+                <span ng-show="IsEmailExist">Email Already Exist.</span>
             </span>
         </div>
     </div>
@@ -74,6 +75,7 @@
             <textarea ng-model="Address" name="Address" ng-maxlength="100" required></textarea>
             <span style="color:red" ng-show="myForm.Address.$dirty && myForm.Address.$invalid">
                 <span ng-show="myForm.Address.$error.required">Address is required.</span>
+            </span>
 </div>
     </div>
 
@@ -89,6 +91,7 @@
         <label class="col-sm-2 control-label">Confirm Password:</label>
         <div class="col-sm-10">
             <input type="password" ng-model="password2" placeholder="Repeat Password" required>
+            <span style="color:red" ng-show="PasswordMismatch" >Password didn't match.</span>
         </div>
     </div>
 

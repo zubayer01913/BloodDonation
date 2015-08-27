@@ -30,7 +30,6 @@ namespace BloodDonationApp.Controllers
             db.SaveChanges();
             
             
-            
             return RedirectToAction("Index");
         }
 
@@ -48,6 +47,18 @@ namespace BloodDonationApp.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+        [HttpPost]
+        public bool IsEmailAlreadyExist(string Email)
+        {
+            var DonarList = db.Donator.ToList();
+            foreach(var donar in DonarList){
+                if (donar.Email == Email)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
