@@ -20,7 +20,36 @@
     </div>
 </div>
 
+<div ng-controller="userCtrl">
 
+    <h3>Doner List</h3>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Srial No.</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Phone No.</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Last Donation Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="doner in DonatorList">
+                <td>{{ doner.Id }}</td>
+                <td>{{ doner.Name }}</td>
+                <td>{{ birthday | ageFilter }}</td>
+                <td>{{ doner.Phone }}</td>
+                <td>{{ doner.Email }}</td>
+                <td>{{ doner.Address }}</td>
+                <td>{{ doner.LastDonate }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
 
 
 

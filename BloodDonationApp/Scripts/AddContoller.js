@@ -25,3 +25,23 @@ app.controller('SlideCtrl', function ($scope) {
         }
     ];
 });
+
+app.controller('userCtrl', function ($scope) {
+    $scope.DonatorList = [{ Id: "1", Name: "Alfreds Futterkiste", Age: "23", Phone: "46576235978", Email: "example@emaple.com", Address: "mirpur", LastDonate: "" },
+     { Id: "2", Name: "Ana Trujillo Emparedados y helados", Age: "23", Phone: "46576235978", Email: "example@emaple.com", Address: "mirpur", LastDonate: "" },
+    ];
+    $scope.birthday = new Date(1970, 1, 1);
+});
+
+
+app.filter('ageFilter', function () {
+    function calculateAge(birthday) { // birthday is a date
+        var ageDifMs = Date.now() - birthday.getTime();
+        var ageDate = new Date(ageDifMs); // miliseconds from epoch
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+
+    return function (birthdate) {
+        return calculateAge(birthdate);
+    };
+});
