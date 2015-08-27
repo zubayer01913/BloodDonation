@@ -38,7 +38,7 @@ app.controller('userCtrl', function ($scope, angularService) {
         alert('Error in getting records');
     });
 
-        $scope.birthday = new Date(1970, 1, 1);
+       
 });
 
 
@@ -51,5 +51,12 @@ app.filter('ageFilter', function () {
 
     return function (birthdate) {
         return calculateAge(birthdate);
+    };
+});
+
+
+app.filter("jsDate", function () {
+    return function (x) {
+        return new Date(parseInt(x.substr(6)));
     };
 });
