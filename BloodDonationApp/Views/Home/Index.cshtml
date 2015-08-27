@@ -22,6 +22,14 @@
 
 <div ng-controller="userCtrl">
 
+    <label>Search: <input class="form-control" ng-model="query[queryBy]"></label>
+    <label>Search By :<select ng-model="queryBy">
+                          <option value="BloodGroup">BloodGroup</option>
+                          <option value="Address">Address</option>
+                    </select> 
+    </label>
+    
+
     <h3>Doner List</h3>
 
     <table class="table table-striped">
@@ -38,7 +46,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="doner in DonatorList">
+            <tr ng-repeat="doner in DonatorList| filter:query">
                 <td>{{ $index + 1 }}</td>
                 <td>{{ doner.FullName }}</td>
                 <td>{{ doner.DateOfBirth|jsDate | ageFilter }}</td>
@@ -47,6 +55,9 @@
                 <td>{{ doner.Email }}</td>
                 <td>{{ doner.Address }}</td>
                 <td>{{ doner.LastDateOfDonation|jsDate|dayFilter }}</td>
+                <td>
+                    <input type="button" value="Remove" class="btn btn-primary" ng-click="" />
+                </td>
             </tr>
         </tbody>
     </table>
