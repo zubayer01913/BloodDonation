@@ -45,26 +45,25 @@
             };
             if ($scope.password1 != $scope.password2) {
                 $scope.PasswordMismatch = true;
-                IsallInformationCorrect = false;
+                return;
             }
             var email = $scope.Email;
             var IsEmailAlreadyExist = angularService.IsEmailAlreadyExist(email);
             IsEmailAlreadyExist.then(function (obj) {
-                $scope.IsEmailExist = obj.data;
+                //$scope.IsEmailExist = obj.data;
+                if (obj.data=="True") {
+                    $scope.IsEmailExist = true;
+                    //alert("Email Already exist")
+                    return;
+                }
+                else {
+                    angularService.AddDonar(Model);
+                    alert("Registration successfull")
+                }
             }, function () {
-                alert('Error in getting records');
-            });
-            if ($scope.IsEmailExist) {
-                IsallInformationCorrect = false;
-            }
-            if (IsallInformationCorrect)
-            {
-                angularService.AddDonar(Model);
-                Clear();
-            }
-            else {
-                alert("All information is not correct")
-            }
+                alert('Error in Email verification process');
+            });     
+            
             
         };
 });
