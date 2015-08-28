@@ -2,7 +2,7 @@
 
     //get All DonarList
     this.getDonarList = function () {
-        return $http.get("Home/GetDonarList");
+        return $http.get("GetDonarList");
     };
 
     // get Employee By Id
@@ -46,6 +46,17 @@
             url: "Home/DeleteEmployee",
             params: {
                 employeeId: JSON.stringify(employeeId)
+            }
+        });
+        return response;
+    }
+
+    this.IsEmailAlreadyExist = function (email) {
+        var response = $http({
+            method: "post",
+            url: "IsEmailAlreadyExist",
+            params: {
+                email: email
             }
         });
         return response;
