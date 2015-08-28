@@ -26,7 +26,7 @@ app.controller('SlideCtrl', function ($scope) {
     ];
 });
 
-app.controller('userCtrl', function ($scope, angularService) {
+app.controller('userCtrl', function ($scope, $window, angularService) {
     //$scope.DonatorList = [{ Id: "1", Name: "Alfreds Futterkiste", Age: "23", Phone: "46576235978", Email: "example@emaple.com", Address: "mirpur", LastDonate: "" },
     // { Id: "2", Name: "Ana Trujillo Emparedados y helados", Age: "23", Phone: "46576235978", Email: "example@emaple.com", Address: "mirpur", LastDonate: "" },
     //];
@@ -43,6 +43,12 @@ app.controller('userCtrl', function ($scope, angularService) {
                            { name: "AB+", id: 5 }, { name: "AB-", id: 6 },
        { name: "O+", id: 7 }, { name: "O-", id: 8 }];
     $scope.BloodGroup = "";
+    $scope.reloadRoute = function () {
+        $window.location.reload();
+    }
+    //$scope.reloadRoute = function () {
+    //    $route.reload();
+    //}
 });
 
 
