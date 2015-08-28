@@ -50,6 +50,10 @@ namespace BloodDonationApp.Controllers
 
             return View();
         }
+        public ActionResult AdminPage()
+        {
+            return View();
+        }
         [HttpGet]
         public ActionResult Login()
         {

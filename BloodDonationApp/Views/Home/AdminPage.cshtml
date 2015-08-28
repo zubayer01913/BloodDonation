@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Admin";
+}
+
+
+
+<div ng-controller="SlideCtrl">
+    <div style="height: 305px">
+        <carousel interval="myInterval" no-wrap="noWrapSlides">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <div style="width: 600px; height: 300px; margin: 0 auto;">
+                    <img class="img-responsive" ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption">
+                        <h4 style="color: green;">{{slide.text}}</h4>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>
+
+<hr />
+
+<div ng-controller="userCtrl">
+
+    <label>Search: <input class="form-control" ng-model="query[queryBy]"></label>
+    <label>
+        Search By :<select ng-model="queryBy">
+            <option value="BloodGroup">BloodGroup</option>
+            <option value="Address">Address</option>
+        </select>
+    </label>
+    <a ng-click="reloadRoute()" class="btn btn-info" role="button" data-translate>Refresh</a>
+    @*<a ng-click="reloadRoute()" class="navbar-brand" title="home" data-translate>PORTAL_NAME</a>*@
+    <hr />
+    <h3>Doner List</h3>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Srial No.</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Blood Group</th>
+                <th>Phone No.</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Last Donation Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="doner in DonatorList| filter:query" ng-class-odd="'odd'" ng-class-even="'even'">
+                <td>{{ $index + 1 }}</td>
+                <td>{{ doner.FullName }}</td>
+                <td>{{ doner.DateOfBirth|jsDate | ageFilter }}</td>
+                <td>{{ doner.BloodGroup }}</td>
+                <td>{{ doner.Phone }}</td>
+                <td>{{ doner.Email }}</td>
+                <td>{{ doner.Address }}</td>
+                <td>{{ doner.LastDateOfDonation|jsDate|dayFilter }}</td>
+                <td>
+                    <input type="button" value="Remove" class="btn btn-primary" ng-click="" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
+
