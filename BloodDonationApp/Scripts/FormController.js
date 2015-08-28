@@ -59,7 +59,7 @@
                 else {
                     angularService.AddDonar(Model);
                     alert("Registration successfull")
-                    $window.location.href = 'Index';
+                    return $window.location.href = 'Index';
                 }
             }, function () {
                 alert('Error in Email verification process');

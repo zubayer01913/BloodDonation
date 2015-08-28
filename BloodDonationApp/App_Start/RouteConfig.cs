@@ -12,7 +12,7 @@ namespace BloodDonationApp
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+            routes.MapRoute("UrlFix", "Home/Home/GetDonarList", new { controller = "Home", action = "GetDonarList" });
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

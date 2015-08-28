@@ -1,10 +1,12 @@
 ﻿using BloodDonationApp.DAL;
 using BloodDonationApp.Models;
+using BloodDonationApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace BloodDonationApp.Controllers
 {
@@ -48,6 +50,33 @@ namespace BloodDonationApp.Controllers
 
             return View();
         }
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+        public ActionResult Login(Login user)
+        {
+            if (ModelState.IsValid)
+            {
+                var DonarList = db.Donator.ToList();
+                foreach (var donar in DonarList)
+                {
+                    if (donar.Email == user.Email && donar.Password == user.Password)
+                    {
+                        FormsAuthentication.SetAuthCookie(donar.FullName, false);
+                        return RedirectToAction("Index");
+                    }
+                }
+                return View();
+            }
+            else
+            {
+                return View();
+            }
+            
+        }
+
         [HttpPost]
         public bool IsEmailAlreadyExist(string Email)
         {

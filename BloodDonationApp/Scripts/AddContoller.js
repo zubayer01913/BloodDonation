@@ -31,7 +31,7 @@ app.controller('userCtrl', function ($scope, angularService) {
     // { Id: "2", Name: "Ana Trujillo Emparedados y helados", Age: "23", Phone: "46576235978", Email: "example@emaple.com", Address: "mirpur", LastDonate: "" },
     //];
    
-    var getData = angularService.getDonarList();
+    var getData = angularService.getDonarListFromHome();
     getData.then(function (obj) {
         $scope.DonatorList = obj.data;
     }, function () {

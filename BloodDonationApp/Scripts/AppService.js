@@ -4,6 +4,9 @@
     this.getDonarList = function () {
         return $http.get("GetDonarList");
     };
+    this.getDonarListFromHome = function () {
+        return $http.get("Home/GetDonarList");
+    };
 
     // get Employee By Id
     this.getEmployee = function (employeeID) {
