@@ -31,12 +31,14 @@ app.controller('userCtrl', function ($scope, $window, angularService) {
     // { Id: "2", Name: "Ana Trujillo Emparedados y helados", Age: "23", Phone: "46576235978", Email: "example@emaple.com", Address: "mirpur", LastDonate: "" },
     //];
    
-    var getData = angularService.getDonarListFromHome();
+    var getData = angularService.GetDonarList();
     getData.then(function (obj) {
         $scope.DonatorList = obj.data;
     }, function () {
         alert('Error in getting records');
     });
+
+    //$scope.DonatorList = angularService.GetDonarList();
 
     $scope.BloodGroups = [{ name: "A+", id: 1 }, { name: "A-", id: 2 }
                          , { name: "B+", id: 3 }, { name: "B-", id: 4 },

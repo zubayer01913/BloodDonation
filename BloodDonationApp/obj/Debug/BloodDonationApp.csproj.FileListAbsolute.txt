@@ -27,3 +27,25 @@ D:\training\project\BloodDonation\BloodDonationApp\bin\Newtonsoft.Json.xml
 D:\training\project\BloodDonation\BloodDonationApp\bin\Antlr3.Runtime.pdb
 D:\training\project\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.dll
 D:\training\project\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.pdb
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\BloodDonationApp.dll.config
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\BloodDonationApp.dll
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\BloodDonationApp.pdb
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.Owin.dll
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.Owin.Security.dll
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Owin.dll
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.Owin.xml
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.Owin.Security.xml
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.csprojResolveAssemblyReference.cache
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.dll
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\obj\Debug\BloodDonationApp.pdb
+C:\Users\Laptop Dream\Documents\Visual Studio 2013\Projects\BloodDonation\BloodDonationApp\bin\WebActivatorEx.dll

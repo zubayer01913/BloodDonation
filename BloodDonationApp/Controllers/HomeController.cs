@@ -25,14 +25,13 @@ namespace BloodDonationApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(Donator donator)
+        public void Create(Donator donator)
         {
             //Donator donator = new Donator();
             db.Donator.Add(donator);
-            db.SaveChanges();
+            db.SaveChanges();         
             
             
-            return RedirectToAction("Index");
         }
 
         public JsonResult GetDonarList()

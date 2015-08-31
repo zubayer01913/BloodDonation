@@ -1,12 +1,19 @@
 ﻿app.service("angularService", function ($http) {
 
     //get All DonarList
-    this.getDonarList = function () {
-        return $http.get("GetDonarList");
+    this.GetDonarList = function () {
+        var JsonData = $http.get("Home/GetDonarList");
+        JsonData.then(function (obj) {
+            return obj.data;
+        }, function () {
+            alert('Error in getting records');
+        });
+
+        return JsonData;
     };
-    this.getDonarListFromHome = function () {
-        return $http.get("Home/GetDonarList");
-    };
+    //this.getDonarListFromHome = function () {
+    //    return $http.get("Home/GetDonarList");
+    //};
 
     // get Employee By Id
     this.getEmployee = function (employeeID) {
@@ -63,5 +70,10 @@
             }
         });
         return response;
+    }
+    this.CalculateAge = function (birthday) { // birthday is a date
+        var ageDifMs = Date.now() - birthday.getTime();
+        var ageDate = new Date(ageDifMs); // miliseconds from epoch
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
     }
 });
