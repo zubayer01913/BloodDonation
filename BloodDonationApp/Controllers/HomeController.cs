@@ -62,14 +62,21 @@ namespace BloodDonationApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                var DonarList = db.Donator.ToList();
-                foreach (var donar in DonarList)
+                IQueryable<Donator> donarlist = db.Donator.Where(u=> u.Email==user.Email && u.Password==user.Password);
+                //var DonarList = db.Donator.ToList();
+                var FoundUser = donarlist.ToList();
+                //foreach (var donar in DonarList)
+                //{
+                //    if (donar.Email == user.Email && donar.Password == user.Password)
+                //    {
+                //        FormsAuthentication.SetAuthCookie(donar.FullName, false);
+                //        return RedirectToAction("Index");
+                //    }
+                //}
+                if (FoundUser.Count>0)
                 {
-                    if (donar.Email == user.Email && donar.Password == user.Password)
-                    {
-                        FormsAuthentication.SetAuthCookie(donar.FullName, false);
-                        return RedirectToAction("Index");
-                    }
+                    FormsAuthentication.SetAuthCookie(FoundUser[0].FullName, false);
+                          return RedirectToAction("Index");
                 }
                 return View();
             }
